@@ -1254,6 +1254,63 @@ text-align: justify;
   }
 }
 
+
+/*--------------------------------------------------------------
+# Experiences section
+--------------------------------------------------------------*/
+.experience-section .exp-card {
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e0e0e0;
+  display: flex;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s,-webkit-transform .2s;
+  transition-duration: .2s;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.experience-section .exp-card:hover {
+  border: 2px solid #0563bb;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  transition-duration: .2s;
+}
+
+.experience-section .exp-meta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experience-section .job-logo {
+  height: 100px;
+  margin-bottom: 20px;
+  width: 100px;
+}
+.experience-section .exp-meta .job-client {
+  font-weight: 700;
+  font-size: 16px;
+}
+.experience-section .job-tenure {
+  color: gray;
+  font-size: small;
+}
+.experience-section .job-title {
+  font-weight: 700;
+}
+.experience-section li.responsibility, .experience-section p.exp-description {
+  font-size: small;
+}
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
