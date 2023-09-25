@@ -5,11 +5,13 @@
 * License: https://bootstrapmade.com/license/
 */ 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #272829;
 }
 
@@ -29,7 +31,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -334,7 +335,6 @@ h6 {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
@@ -517,7 +517,6 @@ section#skills{
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
@@ -778,7 +777,6 @@ text-align: justify;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #0563bb;
   margin-bottom: 10px;
 }
@@ -1272,6 +1270,7 @@ text-align: justify;
   transition-duration: .2s;
   border: 2px solid transparent;
   cursor: pointer;
+  height: 460px;
 }
 .experience-section .exp-card:hover {
   border: 2px solid #0563bb;
@@ -1309,6 +1308,126 @@ text-align: justify;
 # End
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# What I DO section
+--------------------------------------------------------------*/
+section.whatido{
+  padding: 0;
+}
+.wid-section .task-card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e0e0e0;
+  color: gray;
+  cursor: default;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  transition-duration: .2s;
+  height: 100px;
+  font-size: 14px;
+}
+.wid-section .task-card:hover {
+  background-color: #3439be;
+  color: #fff;
+  transition-duration: .2s;
+}
+
+.wid-section .task-card .check-icon {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Project Description
+--------------------------------------------------------------*/
+.technologies-used{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technologies-used img{
+  margin-bottom: 20px;
+  margin-right: 22px;
+  width: 40px;
+  cursor: pointer;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.card.project_pnl_grid{
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e0e0e0;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: none;
+}
+.card.project_pnl_grid .card-img-top{
+  width: 100%;
+  box-shadow: 0 0 5px #e0e0e0;
+  height: 190px;
+  object-fit: cover;
+}
+.card.project_pnl_grid .card-body{
+
+}
+.latest_technology_used {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  padding-bottom: 5px;
+
+}
+.latest_technology_used::after{
+  width: 356px;
+  height: 2px;
+  background: #ededed;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;;
+}
+
+.card.project_pnl_grid .card-body h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.card.project_pnl_grid .card-body h6{
+
+}
+.card.project_pnl_grid .card-body p{
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 22px;
+
+}
+.latest_technology_used img{
+  cursor: pointer;
+  height: 25px;
+  margin-right:6px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+a.project_pnl_color{
+  color: #272829;
+}
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
@@ -1327,6 +1446,10 @@ text-align: justify;
   transition: transform .2s;
   transition: transform .2s,-webkit-transform .2s;
   transition-duration: .2s;
+}
+
+.contact .common-layer_inner{
+  padding: 24px 10px;
 }
 
 .common-layer_inner:hover {
@@ -1511,7 +1634,6 @@ color: #728394;
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
