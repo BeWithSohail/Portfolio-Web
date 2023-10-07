@@ -1740,6 +1740,10 @@ section.contact {
   .experience-section p.exp-description {
     line-height: 24px;
   }
+  .container{
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1768,8 +1772,8 @@ section.contact {
   #hero {
     background: url(../img/msite_bg_banner.jpg);
     background-position: center top;
-    background-repeat: no-repeat;
-    height: 80vh;
+    background-repeat: repeat-y;
+    height: 90vh;
   }
   #hero:before {
     background: rgba(0, 0, 0, 0.9);
@@ -1848,4 +1852,8 @@ section.contact {
   .technologies-used img {
     margin: 0 10px 20px;
   }
+  .card.project_pnl_grid .card-img-top{
+    height: auto;
+  }
+
 }
