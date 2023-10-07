@@ -1744,6 +1744,10 @@ section.contact {
     padding-right: calc(var(--bs-gutter-x) * 1);
     padding-left: calc(var(--bs-gutter-x) * 1);
   }
+  section#hero .container{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
 }
 
 @media (max-width: 767px) {
