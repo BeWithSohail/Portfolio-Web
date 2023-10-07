@@ -1773,7 +1773,7 @@ section.contact {
     background: url(../img/msite_bg_banner.jpg);
     background-position: center top;
     background-repeat: repeat-y;
-    height: 90vh;
+    height: 100vh;
   }
   #hero:before {
     background: rgba(0, 0, 0, 0.9);
@@ -1811,7 +1811,7 @@ section.contact {
     border-color: #4349db;
   }
   .download-cv a {
-    padding: 8px 14px;
+    padding: 6px 12px;
     font-size: 14px;
     line-height: 22px;
     border-color: #fff;
