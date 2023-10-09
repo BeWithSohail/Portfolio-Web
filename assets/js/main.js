@@ -1,9 +1,5 @@
-/**
-* Template Name: MyResume - v4.9.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/ 
+
+
 (function() {
   "use strict";
 
@@ -39,6 +35,9 @@
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
+
+
+
 
   /**
    * Navbar links active state on scroll
@@ -266,4 +265,29 @@
    */
   new PureCounter();
 
-})()
+})();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+  var heroSection = document.getElementById("hero");
+  
+  var options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0
+  };
+
+  var observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              mobileNavToggle.classList.remove("colored_black");
+          } else {
+              mobileNavToggle.classList.add("colored_black");
+          }
+      });
+  }, options);
+
+  observer.observe(heroSection);
+});
+
