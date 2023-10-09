@@ -1810,9 +1810,15 @@ section.contact {
 }
 
 @media (max-width: 767px) {
+  .section-title h2 {
+    font-size: 18px;
+  }
   .loading span {
     font-size: 16px;
     top: 58%;
+  }
+  .card.project_pnl_grid .card-body h4{
+    font-size: 16px;
   }
   .container {
     padding-right: calc(var(--bs-gutter-x) * 1);
@@ -1826,13 +1832,11 @@ section.contact {
     line-height: 22px;
   }
   .experience-section .job-logo {
+    height: 60px;
     margin-bottom: 10px;
   }
-  .experience-section .job-logo {
-    height: 60px;
-  }
   .experience-section .job-title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .experience-section p.exp-description {
     line-height: 20px;
