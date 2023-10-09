@@ -1810,6 +1810,10 @@ section.contact {
 }
 
 @media (max-width: 767px) {
+  .loading span {
+    font-size: 16px;
+    top: 58%;
+  }
   .container {
     padding-right: calc(var(--bs-gutter-x) * 1);
     padding-left: calc(var(--bs-gutter-x) * 1);
@@ -1833,12 +1837,13 @@ section.contact {
   .experience-section p.exp-description {
     line-height: 20px;
     text-align: justify;
+    margin-top: 10px;
   }
   section.about {
     padding: 20px 0;
   }
   .about .content h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: #45505b;
     margin-bottom: 5px;
   }
@@ -1962,4 +1967,9 @@ section.contact {
   .latest_technology_used::after {
     width: 342px;
   }
+}
+@media (max-width: 375px) {
+  .latest_technology_used::after {
+    width: 325px;
+}
 }
