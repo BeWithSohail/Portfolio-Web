@@ -176,15 +176,6 @@ h6 {
   overflow-y: auto;
 }
 
-@media (max-width: 992px) {
-  #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
-    left: -300px;
-  }
-}
-
 @media (min-width: 992px) {
   #main {
     margin-left: 100px;
@@ -370,7 +361,12 @@ h6 {
 #hero .social-links {
   margin-top: 30px;
 }
-
+.mobile-nav-toggle{
+  color: #fff;
+}
+.mobile-nav-active .mobile-nav-toggle{
+  background: none;
+}
 #hero .social-links a {
   font-size: 22px;
   display: inline-block;
@@ -1807,6 +1803,54 @@ section.contact {
   .latest_technology_used::after {
     width: 325px;
   }
+  .mobile-nav-active #header {
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    border-right: 0;
+    background-size: cover;
+}
+.nav-menu a, .nav-menu a:focus {
+  padding: 6px 18px;
+  height: 40px;
+  margin-bottom: 10px;
+  background: none;
+  color: #fff;
+  border: 1px solid #ffff;
+  border-radius: 7px;
+}
+.nav-menu a span, .nav-menu a:focus span{
+  color: #fff;
+}
+.nav-menu .active{
+  color: #45505b;
+  background: #fff;
+}
+.nav-menu .active span{
+  color: #45505b; 
+}
+.nav-menu a:hover{
+  color: #45505b;
+  background: #fff;
+}
+.nav-menu a:hover span{
+  color:#45505b;
+}
+.nav-menu .active, .nav-menu .active:focus{
+  color:#45505b;
+  background: #fff;
+}
+.nav-menu li:hover > a {
+  color:#45505b;
+  background: #fff;
+}
+.latest_technology_used::after {
+  width: 100%;
+  left: 0;
+  height: 1px;
+}
 }
 
 @media (max-width: 767px) {
@@ -1825,8 +1869,8 @@ section.contact {
     padding-left: calc(var(--bs-gutter-x) * 1);
   }
   #header {
-    width: 100%;
-    left: -100%;
+    width: 60%;
+    left: -60%;
   }
   li.responsibility {
     line-height: 22px;
@@ -1905,23 +1949,19 @@ section.contact {
   .mobile-nav-toggle {
     color: #fff;
   }
-  .mobile-nav-toggle.colored_black {
-    color: #0563bb;
+  .mobile-nav-toggle.hide_nav {
+   display: none;
   }
   #hero .bio-dtls p span {
     color: #fff;
   }
   .mobile-nav-active .mobile-nav-toggle {
-    color: #0563bb;
+    color: #fff;
     background: none;
     right: 0;
   }
   .mobile-nav-toggle {
     top: 10px;
-  }
-  .nav-menu a,
-  .nav-menu a:focus {
-    justify-content: center;
   }
   .about-content p {
     line-height: 22px;
@@ -1951,11 +1991,6 @@ section.contact {
     height: 80px;
     margin-bottom: 10px;
   }
-  .latest_technology_used::after {
-    width: 365px;
-    height: 1px;
-    left: -16px;
-  }
   .img_tech .tooltiptext {
     left: -15px;
   }
@@ -1965,15 +2000,4 @@ section.contact {
   .technologies-used .img_tech {
     margin-right: 10px;
   }
-}
-
-@media (max-width: 400px) {
-  .latest_technology_used::after {
-    width: 342px;
-  }
-}
-@media (max-width: 375px) {
-  .latest_technology_used::after {
-    width: 325px;
-}
 }
