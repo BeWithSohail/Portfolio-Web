@@ -3,6 +3,13 @@
 (function() {
   "use strict";
 
+
+  let arr = [3, 50, 100, 1, 70];
+
+
+  
+  console.log(filteredArray);
+
   /**
    * Easy selector helper function
    */
@@ -281,9 +288,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var observer = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
           if (entry.isIntersecting) {
-              mobileNavToggle.classList.remove("colored_black");
+              mobileNavToggle.classList.remove("hide_nav");
           } else {
-              mobileNavToggle.classList.add("colored_black");
+              mobileNavToggle.classList.add("hide_nav");
           }
       });
   }, options);
