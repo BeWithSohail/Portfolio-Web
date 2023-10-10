@@ -3,13 +3,6 @@
 (function() {
   "use strict";
 
-
-  let arr = [3, 50, 100, 1, 70];
-
-
-  
-  console.log(filteredArray);
-
   /**
    * Easy selector helper function
    */
