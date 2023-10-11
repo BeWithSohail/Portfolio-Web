@@ -87,8 +87,8 @@ h6 {
 }
 .loading:before {
   content: "";
-  background: #61bdb6;
-  width: 128px;
+  background: #1973c779;
+  width: 130px;
   height: 36px;
   display: block;
   position: absolute;
@@ -127,7 +127,7 @@ h6 {
 
 .loading:after {
   content: "";
-  background: #ff3600;
+  background:#fff;
   width: 14px;
   height: 60px;
   display: block;
@@ -137,7 +137,7 @@ h6 {
   right: 0;
   bottom: 0;
   margin: auto;
-  opacity: 0.5;
+  opacity: 0.8;
 
   animation: 2s loadingAfter infinite ease-in-out;
 }
